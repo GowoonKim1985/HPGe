@@ -1,0 +1,2 @@
+livetime : 11911031.1 s
+sample mass : 788.17 g
