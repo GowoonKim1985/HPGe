@@ -1,0 +1,17 @@
+#include "TFile.h"
+#include "TH1.h"
+#include <fstream>
+
+void hist_to_ascii_min() {
+    TFile *f = TFile::Open("his_000650.v1.root");
+    if (!f || f->IsZombie()) return;
+
+    TH1 *h = (TH1*)f->Get("his_tot3");
+    if (!h) return;
+
+    std::ofstream out("his_det_all.txt");
+    for (int i = 1; i <= h->GetNbinsX(); i++) {
+        out << i << "\t" << h->GetBinContent(i) << "\n";
+    }
+    out.close();
+}

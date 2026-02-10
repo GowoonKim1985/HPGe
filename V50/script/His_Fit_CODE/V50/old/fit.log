@@ -1,0 +1,534 @@
+
+Processing fit_peak_v50_study2.C...
+
+[1mRooFit v3.60 -- Developed by Wouter Verkerke and David Kirkby[0m 
+                Copyright (C) 2000-2013 NIKHEF, University of California & Stanford University
+                All rights reserved, please read http://roofit.sourceforge.net/license.txt
+
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(data_bkg): fit range of variable x_bkg expanded to nearest bin boundaries: [1503.8,1603.8] --> [1503.5,1604]
+[#1] INFO:Minization -- RooMinimizer::optimizeConst: activating const optimization
+ **********
+ **    1 **SET PRINT           1
+ **********
+ **********
+ **    2 **SET NOGRAD
+ **********
+ PARAMETER DEFINITIONS:
+    NO.   NAME         VALUE      STEP SIZE      LIMITS
+     1 p0           0.00000e+00  2.00000e+02   -1.00000e+03  1.00000e+03
+     2 p1           0.00000e+00  2.00000e+00   -1.00000e+01  1.00000e+01
+ **********
+ **    3 **SET ERR         0.5
+ **********
+ **********
+ **    4 **SET PRINT           1
+ **********
+ **********
+ **    5 **SET STR           1
+ **********
+ NOW USING STRATEGY  1: TRY TO BALANCE SPEED AGAINST RELIABILITY
+ **********
+ **    6 **MIGRAD        1000           1
+ **********
+ FIRST CALL TO USER FUNCTION AT NEW START POINT, WITH IFLAG=4.
+ START MIGRAD MINIMIZATION.  STRATEGY  1.  CONVERGENCE WHEN EDM .LT. 1.00e-03
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (6750.44) to force MIGRAD to back out of this region. Error log follows
+Parameter values: p0=-8.07753, p1=0
+RooNLLVar::nll_bkg_data_bkg[ paramSet=(p0,p1) ]
+     function value is NAN @ paramSet=(p0 = -8.07753,p1 = 0)
+RooPolynomial::bkg[ x=x_bkg coefList=(p0,p1) ]
+     p.d.f value is less than zero (-12145.585094), forcing value to zero @ x=x_bkg=1503.75, coefList=(p0 = -8.07753,p1 = 0)
+     p.d.f normalization integral is zero or negative: -1.26122e+06 @ x=x_bkg=1503.75, coefList=(p0 = -8.07753,p1 = 0)
+     getLogVal() top-level p.d.f evaluates to zero @ x=x_bkg=1503.75, coefList=(p0 = -8.07753,p1 = 0)
+     p.d.f value is less than zero (-12149.623859), forcing value to zero @ x=x_bkg=1504.25, coefList=(p0 = -8.07753,p1 = 0)
+     p.d.f normalization integral is zero or negative: -1.26122e+06 @ x=x_bkg=1504.25, coefList=(p0 = -8.07753,p1 = 0)
+     getLogVal() top-level p.d.f evaluates to zero @ x=x_bkg=1504.25, coefList=(p0 = -8.07753,p1 = 0)
+     p.d.f value is less than zero (-12153.662623), forcing value to zero @ x=x_bkg=1504.75, coefList=(p0 = -8.07753,p1 = 0)
+     p.d.f normalization integral is zero or negative: -1.26122e+06 @ x=x_bkg=1504.75, coefList=(p0 = -8.07753,p1 = 0)
+     getLogVal() top-level p.d.f evaluates to zero @ x=x_bkg=1504.75, coefList=(p0 = -8.07753,p1 = 0)
+     p.d.f value is less than zero (-12157.701388), forcing value to zero @ x=x_bkg=1505.25, coefList=(p0 = -8.07753,p1 = 0)
+     p.d.f normalization integral is zero or negative: -1.26122e+06 @ x=x_bkg=1505.25, coefList=(p0 = -8.07753,p1 = 0)
+     getLogVal() top-level p.d.f evaluates to zero @ x=x_bkg=1505.25, coefList=(p0 = -8.07753,p1 = 0)
+    ... (remaining 569 messages suppressed)
+
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (6750.44) to force MIGRAD to back out of this region. Error log follows
+Parameter values: p0=-0.807762, p1=0
+RooNLLVar::nll_bkg_data_bkg[ paramSet=(p0,p1) ]
+     function value is NAN @ paramSet=(p0 = -0.807762,p1 = 0)
+RooPolynomial::bkg[ x=x_bkg coefList=(p0,p1) ]
+     p.d.f value is less than zero (-1213.671586), forcing value to zero @ x=x_bkg=1503.75, coefList=(p0 = -0.807762,p1 = 0)
+     p.d.f normalization integral is zero or negative: -126033 @ x=x_bkg=1503.75, coefList=(p0 = -0.807762,p1 = 0)
+     getLogVal() top-level p.d.f evaluates to zero @ x=x_bkg=1503.75, coefList=(p0 = -0.807762,p1 = 0)
+     p.d.f value is less than zero (-1214.075467), forcing value to zero @ x=x_bkg=1504.25, coefList=(p0 = -0.807762,p1 = 0)
+     p.d.f normalization integral is zero or negative: -126033 @ x=x_bkg=1504.25, coefList=(p0 = -0.807762,p1 = 0)
+     getLogVal() top-level p.d.f evaluates to zero @ x=x_bkg=1504.25, coefList=(p0 = -0.807762,p1 = 0)
+     p.d.f value is less than zero (-1214.479348), forcing value to zero @ x=x_bkg=1504.75, coefList=(p0 = -0.807762,p1 = 0)
+     p.d.f normalization integral is zero or negative: -126033 @ x=x_bkg=1504.75, coefList=(p0 = -0.807762,p1 = 0)
+     getLogVal() top-level p.d.f evaluates to zero @ x=x_bkg=1504.75, coefList=(p0 = -0.807762,p1 = 0)
+     p.d.f value is less than zero (-1214.883229), forcing value to zero @ x=x_bkg=1505.25, coefList=(p0 = -0.807762,p1 = 0)
+     p.d.f normalization integral is zero or negative: -126033 @ x=x_bkg=1505.25, coefList=(p0 = -0.807762,p1 = 0)
+     getLogVal() top-level p.d.f evaluates to zero @ x=x_bkg=1505.25, coefList=(p0 = -0.807762,p1 = 0)
+    ... (remaining 569 messages suppressed)
+
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (6750.44) to force MIGRAD to back out of this region. Error log follows
+Parameter values: p0=-0.0807762, p1=0
+RooNLLVar::nll_bkg_data_bkg[ paramSet=(p0,p1) ]
+     function value is NAN @ paramSet=(p0 = -0.0807762,p1 = 0)
+RooPolynomial::bkg[ x=x_bkg coefList=(p0,p1) ]
+     p.d.f value is less than zero (-120.467172), forcing value to zero @ x=x_bkg=1503.75, coefList=(p0 = -0.0807762,p1 = 0)
+     p.d.f normalization integral is zero or negative: -12512.9 @ x=x_bkg=1503.75, coefList=(p0 = -0.0807762,p1 = 0)
+     getLogVal() top-level p.d.f evaluates to zero @ x=x_bkg=1503.75, coefList=(p0 = -0.0807762,p1 = 0)
+     p.d.f value is less than zero (-120.507560), forcing value to zero @ x=x_bkg=1504.25, coefList=(p0 = -0.0807762,p1 = 0)
+     p.d.f normalization integral is zero or negative: -12512.9 @ x=x_bkg=1504.25, coefList=(p0 = -0.0807762,p1 = 0)
+     getLogVal() top-level p.d.f evaluates to zero @ x=x_bkg=1504.25, coefList=(p0 = -0.0807762,p1 = 0)
+     p.d.f value is less than zero (-120.547948), forcing value to zero @ x=x_bkg=1504.75, coefList=(p0 = -0.0807762,p1 = 0)
+     p.d.f normalization integral is zero or negative: -12512.9 @ x=x_bkg=1504.75, coefList=(p0 = -0.0807762,p1 = 0)
+     getLogVal() top-level p.d.f evaluates to zero @ x=x_bkg=1504.75, coefList=(p0 = -0.0807762,p1 = 0)
+     p.d.f value is less than zero (-120.588336), forcing value to zero @ x=x_bkg=1505.25, coefList=(p0 = -0.0807762,p1 = 0)
+     p.d.f normalization integral is zero or negative: -12512.9 @ x=x_bkg=1505.25, coefList=(p0 = -0.0807762,p1 = 0)
+     getLogVal() top-level p.d.f evaluates to zero @ x=x_bkg=1505.25, coefList=(p0 = -0.0807762,p1 = 0)
+    ... (remaining 569 messages suppressed)
+
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (6752.12) to force MIGRAD to back out of this region. Error log follows
+Parameter values: p0=0, p1=-0.0807753
+RooNLLVar::nll_bkg_data_bkg[ paramSet=(p0,p1) ]
+     function value is NAN @ paramSet=(p0 = 0,p1 = -0.0807753)
+RooPolynomial::bkg[ x=x_bkg coefList=(p0,p1) ]
+     p.d.f value is less than zero (-182653.273350), forcing value to zero @ x=x_bkg=1503.75, coefList=(p0 = 0,p1 = -0.0807753)
+     p.d.f normalization integral is zero or negative: -1.96045e+07 @ x=x_bkg=1503.75, coefList=(p0 = 0,p1 = -0.0807753)
+     getLogVal() top-level p.d.f evaluates to zero @ x=x_bkg=1503.75, coefList=(p0 = 0,p1 = -0.0807753)
+     p.d.f value is less than zero (-182774.759394), forcing value to zero @ x=x_bkg=1504.25, coefList=(p0 = 0,p1 = -0.0807753)
+     p.d.f normalization integral is zero or negative: -1.96045e+07 @ x=x_bkg=1504.25, coefList=(p0 = 0,p1 = -0.0807753)
+     getLogVal() top-level p.d.f evaluates to zero @ x=x_bkg=1504.25, coefList=(p0 = 0,p1 = -0.0807753)
+     p.d.f value is less than zero (-182896.285827), forcing value to zero @ x=x_bkg=1504.75, coefList=(p0 = 0,p1 = -0.0807753)
+     p.d.f normalization integral is zero or negative: -1.96045e+07 @ x=x_bkg=1504.75, coefList=(p0 = 0,p1 = -0.0807753)
+     getLogVal() top-level p.d.f evaluates to zero @ x=x_bkg=1504.75, coefList=(p0 = 0,p1 = -0.0807753)
+     p.d.f value is less than zero (-183017.852647), forcing value to zero @ x=x_bkg=1505.25, coefList=(p0 = 0,p1 = -0.0807753)
+     p.d.f normalization integral is zero or negative: -1.96045e+07 @ x=x_bkg=1505.25, coefList=(p0 = 0,p1 = -0.0807753)
+     getLogVal() top-level p.d.f evaluates to zero @ x=x_bkg=1505.25, coefList=(p0 = 0,p1 = -0.0807753)
+    ... (remaining 569 messages suppressed)
+
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (6752.12) to force MIGRAD to back out of this region. Error log follows
+Parameter values: p0=0, p1=-0.00807762
+RooNLLVar::nll_bkg_data_bkg[ paramSet=(p0,p1) ]
+     function value is NAN @ paramSet=(p0 = 0,p1 = -0.00807762)
+RooPolynomial::bkg[ x=x_bkg coefList=(p0,p1) ]
+     p.d.f value is less than zero (-18264.623980), forcing value to zero @ x=x_bkg=1503.75, coefList=(p0 = 0,p1 = -0.00807762)
+     p.d.f normalization integral is zero or negative: -1.96038e+06 @ x=x_bkg=1503.75, coefList=(p0 = 0,p1 = -0.00807762)
+     getLogVal() top-level p.d.f evaluates to zero @ x=x_bkg=1503.75, coefList=(p0 = 0,p1 = -0.00807762)
+     p.d.f value is less than zero (-18276.772716), forcing value to zero @ x=x_bkg=1504.25, coefList=(p0 = 0,p1 = -0.00807762)
+     p.d.f normalization integral is zero or negative: -1.96038e+06 @ x=x_bkg=1504.25, coefList=(p0 = 0,p1 = -0.00807762)
+     getLogVal() top-level p.d.f evaluates to zero @ x=x_bkg=1504.25, coefList=(p0 = 0,p1 = -0.00807762)
+     p.d.f value is less than zero (-18288.925490), forcing value to zero @ x=x_bkg=1504.75, coefList=(p0 = 0,p1 = -0.00807762)
+     p.d.f normalization integral is zero or negative: -1.96038e+06 @ x=x_bkg=1504.75, coefList=(p0 = 0,p1 = -0.00807762)
+     getLogVal() top-level p.d.f evaluates to zero @ x=x_bkg=1504.75, coefList=(p0 = 0,p1 = -0.00807762)
+     p.d.f value is less than zero (-18301.082303), forcing value to zero @ x=x_bkg=1505.25, coefList=(p0 = 0,p1 = -0.00807762)
+     p.d.f normalization integral is zero or negative: -1.96038e+06 @ x=x_bkg=1505.25, coefList=(p0 = 0,p1 = -0.00807762)
+     getLogVal() top-level p.d.f evaluates to zero @ x=x_bkg=1505.25, coefList=(p0 = 0,p1 = -0.00807762)
+    ... (remaining 569 messages suppressed)
+
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (6752.12) to force MIGRAD to back out of this region. Error log follows
+Parameter values: p0=0, p1=-0.000807762
+RooNLLVar::nll_bkg_data_bkg[ paramSet=(p0,p1) ]
+     function value is NAN @ paramSet=(p0 = 0,p1 = -0.000807762)
+RooPolynomial::bkg[ x=x_bkg coefList=(p0,p1) ]
+     p.d.f value is less than zero (-1825.562595), forcing value to zero @ x=x_bkg=1503.75, coefList=(p0 = 0,p1 = -0.000807762)
+     p.d.f normalization integral is zero or negative: -195948 @ x=x_bkg=1503.75, coefList=(p0 = 0,p1 = -0.000807762)
+     getLogVal() top-level p.d.f evaluates to zero @ x=x_bkg=1503.75, coefList=(p0 = 0,p1 = -0.000807762)
+     p.d.f value is less than zero (-1826.777468), forcing value to zero @ x=x_bkg=1504.25, coefList=(p0 = 0,p1 = -0.000807762)
+     p.d.f normalization integral is zero or negative: -195948 @ x=x_bkg=1504.25, coefList=(p0 = 0,p1 = -0.000807762)
+     getLogVal() top-level p.d.f evaluates to zero @ x=x_bkg=1504.25, coefList=(p0 = 0,p1 = -0.000807762)
+     p.d.f value is less than zero (-1827.992746), forcing value to zero @ x=x_bkg=1504.75, coefList=(p0 = 0,p1 = -0.000807762)
+     p.d.f normalization integral is zero or negative: -195948 @ x=x_bkg=1504.75, coefList=(p0 = 0,p1 = -0.000807762)
+     getLogVal() top-level p.d.f evaluates to zero @ x=x_bkg=1504.75, coefList=(p0 = 0,p1 = -0.000807762)
+     p.d.f value is less than zero (-1829.208427), forcing value to zero @ x=x_bkg=1505.25, coefList=(p0 = 0,p1 = -0.000807762)
+     p.d.f normalization integral is zero or negative: -195948 @ x=x_bkg=1505.25, coefList=(p0 = 0,p1 = -0.000807762)
+     getLogVal() top-level p.d.f evaluates to zero @ x=x_bkg=1505.25, coefList=(p0 = 0,p1 = -0.000807762)
+    ... (remaining 569 messages suppressed)
+
+ FCN=6749.27 FROM MIGRAD    STATUS=INITIATE       12 CALLS          13 TOTAL
+                     EDM= unknown      STRATEGY= 1      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           0.00000e+00   2.00000e+02   2.01358e-01  -6.25289e+03
+   2  p1           0.00000e+00   2.00000e+00   2.01358e-01  -6.20055e+03
+                               ERR DEF= 0.5
+ MIGRAD FAILS TO FIND IMPROVEMENT
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (6752.12) to force MIGRAD to back out of this region. Error log follows
+Parameter values: p0=-0.0807762, p1=0
+RooNLLVar::nll_bkg_data_bkg[ paramSet=(p0,p1) ]
+     function value is NAN @ paramSet=(p0 = -0.0807762,p1 = 0)
+RooPolynomial::bkg[ x=x_bkg coefList=(p0,p1) ]
+     p.d.f value is less than zero (-120.467172), forcing value to zero @ x=x_bkg=1503.75, coefList=(p0 = -0.0807762,p1 = 0)
+     p.d.f normalization integral is zero or negative: -12512.9 @ x=x_bkg=1503.75, coefList=(p0 = -0.0807762,p1 = 0)
+     getLogVal() top-level p.d.f evaluates to zero @ x=x_bkg=1503.75, coefList=(p0 = -0.0807762,p1 = 0)
+     p.d.f value is less than zero (-120.507560), forcing value to zero @ x=x_bkg=1504.25, coefList=(p0 = -0.0807762,p1 = 0)
+     p.d.f normalization integral is zero or negative: -12512.9 @ x=x_bkg=1504.25, coefList=(p0 = -0.0807762,p1 = 0)
+     getLogVal() top-level p.d.f evaluates to zero @ x=x_bkg=1504.25, coefList=(p0 = -0.0807762,p1 = 0)
+     p.d.f value is less than zero (-120.547948), forcing value to zero @ x=x_bkg=1504.75, coefList=(p0 = -0.0807762,p1 = 0)
+     p.d.f normalization integral is zero or negative: -12512.9 @ x=x_bkg=1504.75, coefList=(p0 = -0.0807762,p1 = 0)
+     getLogVal() top-level p.d.f evaluates to zero @ x=x_bkg=1504.75, coefList=(p0 = -0.0807762,p1 = 0)
+     p.d.f value is less than zero (-120.588336), forcing value to zero @ x=x_bkg=1505.25, coefList=(p0 = -0.0807762,p1 = 0)
+     p.d.f normalization integral is zero or negative: -12512.9 @ x=x_bkg=1505.25, coefList=(p0 = -0.0807762,p1 = 0)
+     getLogVal() top-level p.d.f evaluates to zero @ x=x_bkg=1505.25, coefList=(p0 = -0.0807762,p1 = 0)
+    ... (remaining 569 messages suppressed)
+
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (6752.12) to force MIGRAD to back out of this region. Error log follows
+Parameter values: p0=0, p1=-0.000807762
+RooNLLVar::nll_bkg_data_bkg[ paramSet=(p0,p1) ]
+     function value is NAN @ paramSet=(p0 = 0,p1 = -0.000807762)
+RooPolynomial::bkg[ x=x_bkg coefList=(p0,p1) ]
+     p.d.f value is less than zero (-1825.562595), forcing value to zero @ x=x_bkg=1503.75, coefList=(p0 = 0,p1 = -0.000807762)
+     p.d.f normalization integral is zero or negative: -195948 @ x=x_bkg=1503.75, coefList=(p0 = 0,p1 = -0.000807762)
+     getLogVal() top-level p.d.f evaluates to zero @ x=x_bkg=1503.75, coefList=(p0 = 0,p1 = -0.000807762)
+     p.d.f value is less than zero (-1826.777468), forcing value to zero @ x=x_bkg=1504.25, coefList=(p0 = 0,p1 = -0.000807762)
+     p.d.f normalization integral is zero or negative: -195948 @ x=x_bkg=1504.25, coefList=(p0 = 0,p1 = -0.000807762)
+     getLogVal() top-level p.d.f evaluates to zero @ x=x_bkg=1504.25, coefList=(p0 = 0,p1 = -0.000807762)
+     p.d.f value is less than zero (-1827.992746), forcing value to zero @ x=x_bkg=1504.75, coefList=(p0 = 0,p1 = -0.000807762)
+     p.d.f normalization integral is zero or negative: -195948 @ x=x_bkg=1504.75, coefList=(p0 = 0,p1 = -0.000807762)
+     getLogVal() top-level p.d.f evaluates to zero @ x=x_bkg=1504.75, coefList=(p0 = 0,p1 = -0.000807762)
+     p.d.f value is less than zero (-1829.208427), forcing value to zero @ x=x_bkg=1505.25, coefList=(p0 = 0,p1 = -0.000807762)
+     p.d.f normalization integral is zero or negative: -195948 @ x=x_bkg=1505.25, coefList=(p0 = 0,p1 = -0.000807762)
+     getLogVal() top-level p.d.f evaluates to zero @ x=x_bkg=1505.25, coefList=(p0 = 0,p1 = -0.000807762)
+    ... (remaining 569 messages suppressed)
+
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (6752.12) to force MIGRAD to back out of this region. Error log follows
+Parameter values: p0=-0.00144858, p1=0
+RooNLLVar::nll_bkg_data_bkg[ paramSet=(p0,p1) ]
+     function value is NAN @ paramSet=(p0 = -0.00144858,p1 = 0)
+RooPolynomial::bkg[ x=x_bkg coefList=(p0,p1) ]
+     p.d.f value is less than zero (-1.178298), forcing value to zero @ x=x_bkg=1503.75, coefList=(p0 = -0.00144858,p1 = 0)
+     p.d.f normalization integral is zero or negative: -125.698 @ x=x_bkg=1503.75, coefList=(p0 = -0.00144858,p1 = 0)
+     getLogVal() top-level p.d.f evaluates to zero @ x=x_bkg=1503.75, coefList=(p0 = -0.00144858,p1 = 0)
+     p.d.f value is less than zero (-1.179022), forcing value to zero @ x=x_bkg=1504.25, coefList=(p0 = -0.00144858,p1 = 0)
+     p.d.f normalization integral is zero or negative: -125.698 @ x=x_bkg=1504.25, coefList=(p0 = -0.00144858,p1 = 0)
+     getLogVal() top-level p.d.f evaluates to zero @ x=x_bkg=1504.25, coefList=(p0 = -0.00144858,p1 = 0)
+     p.d.f value is less than zero (-1.179747), forcing value to zero @ x=x_bkg=1504.75, coefList=(p0 = -0.00144858,p1 = 0)
+     p.d.f normalization integral is zero or negative: -125.698 @ x=x_bkg=1504.75, coefList=(p0 = -0.00144858,p1 = 0)
+     getLogVal() top-level p.d.f evaluates to zero @ x=x_bkg=1504.75, coefList=(p0 = -0.00144858,p1 = 0)
+     p.d.f value is less than zero (-1.180471), forcing value to zero @ x=x_bkg=1505.25, coefList=(p0 = -0.00144858,p1 = 0)
+     p.d.f normalization integral is zero or negative: -125.698 @ x=x_bkg=1505.25, coefList=(p0 = -0.00144858,p1 = 0)
+     getLogVal() top-level p.d.f evaluates to zero @ x=x_bkg=1505.25, coefList=(p0 = -0.00144858,p1 = 0)
+    ... (remaining 569 messages suppressed)
+
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (6752.12) to force MIGRAD to back out of this region. Error log follows
+Parameter values: p0=0, p1=-1.25274e-05
+RooNLLVar::nll_bkg_data_bkg[ paramSet=(p0,p1) ]
+     function value is NAN @ paramSet=(p0 = 0,p1 = -1.25274e-05)
+RooPolynomial::bkg[ x=x_bkg coefList=(p0,p1) ]
+     p.d.f value is less than zero (-27.327653), forcing value to zero @ x=x_bkg=1503.75, coefList=(p0 = 0,p1 = -1.25274e-05)
+     p.d.f normalization integral is zero or negative: -2939.96 @ x=x_bkg=1503.75, coefList=(p0 = 0,p1 = -1.25274e-05)
+     getLogVal() top-level p.d.f evaluates to zero @ x=x_bkg=1503.75, coefList=(p0 = 0,p1 = -1.25274e-05)
+     p.d.f value is less than zero (-27.346494), forcing value to zero @ x=x_bkg=1504.25, coefList=(p0 = 0,p1 = -1.25274e-05)
+     p.d.f normalization integral is zero or negative: -2939.96 @ x=x_bkg=1504.25, coefList=(p0 = 0,p1 = -1.25274e-05)
+     getLogVal() top-level p.d.f evaluates to zero @ x=x_bkg=1504.25, coefList=(p0 = 0,p1 = -1.25274e-05)
+     p.d.f value is less than zero (-27.365341), forcing value to zero @ x=x_bkg=1504.75, coefList=(p0 = 0,p1 = -1.25274e-05)
+     p.d.f normalization integral is zero or negative: -2939.96 @ x=x_bkg=1504.75, coefList=(p0 = 0,p1 = -1.25274e-05)
+     getLogVal() top-level p.d.f evaluates to zero @ x=x_bkg=1504.75, coefList=(p0 = 0,p1 = -1.25274e-05)
+     p.d.f value is less than zero (-27.384195), forcing value to zero @ x=x_bkg=1505.25, coefList=(p0 = 0,p1 = -1.25274e-05)
+     p.d.f normalization integral is zero or negative: -2939.96 @ x=x_bkg=1505.25, coefList=(p0 = 0,p1 = -1.25274e-05)
+     getLogVal() top-level p.d.f evaluates to zero @ x=x_bkg=1505.25, coefList=(p0 = 0,p1 = -1.25274e-05)
+    ... (remaining 569 messages suppressed)
+
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (6752.12) to force MIGRAD to back out of this region. Error log follows
+Parameter values: p0=0, p1=-2.50547e-06
+RooNLLVar::nll_bkg_data_bkg[ paramSet=(p0,p1) ]
+     function value is NAN @ paramSet=(p0 = 0,p1 = -2.50547e-06)
+RooPolynomial::bkg[ x=x_bkg coefList=(p0,p1) ]
+     p.d.f value is less than zero (-4.665531), forcing value to zero @ x=x_bkg=1503.75, coefList=(p0 = 0,p1 = -2.50547e-06)
+     p.d.f normalization integral is zero or negative: -507.592 @ x=x_bkg=1503.75, coefList=(p0 = 0,p1 = -2.50547e-06)
+     getLogVal() top-level p.d.f evaluates to zero @ x=x_bkg=1503.75, coefList=(p0 = 0,p1 = -2.50547e-06)
+     p.d.f value is less than zero (-4.669299), forcing value to zero @ x=x_bkg=1504.25, coefList=(p0 = 0,p1 = -2.50547e-06)
+     p.d.f normalization integral is zero or negative: -507.592 @ x=x_bkg=1504.25, coefList=(p0 = 0,p1 = -2.50547e-06)
+     getLogVal() top-level p.d.f evaluates to zero @ x=x_bkg=1504.25, coefList=(p0 = 0,p1 = -2.50547e-06)
+     p.d.f value is less than zero (-4.673068), forcing value to zero @ x=x_bkg=1504.75, coefList=(p0 = 0,p1 = -2.50547e-06)
+     p.d.f normalization integral is zero or negative: -507.592 @ x=x_bkg=1504.75, coefList=(p0 = 0,p1 = -2.50547e-06)
+     getLogVal() top-level p.d.f evaluates to zero @ x=x_bkg=1504.75, coefList=(p0 = 0,p1 = -2.50547e-06)
+     p.d.f value is less than zero (-4.676839), forcing value to zero @ x=x_bkg=1505.25, coefList=(p0 = 0,p1 = -2.50547e-06)
+     p.d.f normalization integral is zero or negative: -507.592 @ x=x_bkg=1505.25, coefList=(p0 = 0,p1 = -2.50547e-06)
+     getLogVal() top-level p.d.f evaluates to zero @ x=x_bkg=1505.25, coefList=(p0 = 0,p1 = -2.50547e-06)
+    ... (remaining 569 messages suppressed)
+
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=6749.27 FROM HESSE     STATUS=OK             14 CALLS          38 TOTAL
+                     EDM=5968.83    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           0.00000e+00   3.70074e-02   8.07762e-05  -1.05822e+06
+   2  p1           0.00000e+00   3.20041e-04   8.07762e-05  -2.93048e+06
+                               ERR DEF= 0.5
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ MIGRAD TERMINATED WITHOUT CONVERGENCE.
+ FCN=6749.27 FROM MIGRAD    STATUS=FAILED         48 CALLS          49 TOTAL
+                     EDM=5968.83    STRATEGY= 1      ERR MATRIX APPROXIMATE
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           0.00000e+00   3.70074e-02   0.00000e+00  -1.05822e+06
+   2  p1           0.00000e+00   3.20041e-04   0.00000e+00  -2.93048e+06
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  2    ERR DEF=0.5
+  1.370e-03  2.593e-06 
+  2.593e-06  1.024e-07 
+ERR MATRIX APPROXIMATE
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2
+        1  0.21889   1.000  0.219
+        2  0.21889   0.219  1.000
+ ERR MATRIX APPROXIMATE
+ **********
+ **    7 **SET ERR         0.5
+ **********
+ **********
+ **    8 **SET PRINT           1
+ **********
+ **********
+ **    9 **HESSE        1000
+ **********
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (6752.12) to force MIGRAD to back out of this region. Error log follows
+Parameter values: p0=-0.00144858, p1=0
+RooNLLVar::nll_bkg_data_bkg[ paramSet=(p0,p1) ]
+     function value is NAN @ paramSet=(p0 = -0.00144858 +/- 0.0370074,p1 = 0 +/- 0.000320041)
+RooPolynomial::bkg[ x=x_bkg coefList=(p0,p1) ]
+     p.d.f value is less than zero (-1.178298), forcing value to zero @ x=x_bkg=1503.75, coefList=(p0 = -0.00144858 +/- 0.0370074,p1 = 0 +/- 0.000320041)
+     p.d.f normalization integral is zero or negative: -125.698 @ x=x_bkg=1503.75, coefList=(p0 = -0.00144858 +/- 0.0370074,p1 = 0 +/- 0.000320041)
+     getLogVal() top-level p.d.f evaluates to zero @ x=x_bkg=1503.75, coefList=(p0 = -0.00144858 +/- 0.0370074,p1 = 0 +/- 0.000320041)
+     p.d.f value is less than zero (-1.179022), forcing value to zero @ x=x_bkg=1504.25, coefList=(p0 = -0.00144858 +/- 0.0370074,p1 = 0 +/- 0.000320041)
+     p.d.f normalization integral is zero or negative: -125.698 @ x=x_bkg=1504.25, coefList=(p0 = -0.00144858 +/- 0.0370074,p1 = 0 +/- 0.000320041)
+     getLogVal() top-level p.d.f evaluates to zero @ x=x_bkg=1504.25, coefList=(p0 = -0.00144858 +/- 0.0370074,p1 = 0 +/- 0.000320041)
+     p.d.f value is less than zero (-1.179747), forcing value to zero @ x=x_bkg=1504.75, coefList=(p0 = -0.00144858 +/- 0.0370074,p1 = 0 +/- 0.000320041)
+     p.d.f normalization integral is zero or negative: -125.698 @ x=x_bkg=1504.75, coefList=(p0 = -0.00144858 +/- 0.0370074,p1 = 0 +/- 0.000320041)
+     getLogVal() top-level p.d.f evaluates to zero @ x=x_bkg=1504.75, coefList=(p0 = -0.00144858 +/- 0.0370074,p1 = 0 +/- 0.000320041)
+     p.d.f value is less than zero (-1.180471), forcing value to zero @ x=x_bkg=1505.25, coefList=(p0 = -0.00144858 +/- 0.0370074,p1 = 0 +/- 0.000320041)
+     p.d.f normalization integral is zero or negative: -125.698 @ x=x_bkg=1505.25, coefList=(p0 = -0.00144858 +/- 0.0370074,p1 = 0 +/- 0.000320041)
+     getLogVal() top-level p.d.f evaluates to zero @ x=x_bkg=1505.25, coefList=(p0 = -0.00144858 +/- 0.0370074,p1 = 0 +/- 0.000320041)
+    ... (remaining 569 messages suppressed)
+
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (6752.12) to force MIGRAD to back out of this region. Error log follows
+Parameter values: p0=0, p1=-2.50547e-06
+RooNLLVar::nll_bkg_data_bkg[ paramSet=(p0,p1) ]
+     function value is NAN @ paramSet=(p0 = 0 +/- 0.0370074,p1 = -2.50547e-06 +/- 0.000320041)
+RooPolynomial::bkg[ x=x_bkg coefList=(p0,p1) ]
+     p.d.f value is less than zero (-4.665531), forcing value to zero @ x=x_bkg=1503.75, coefList=(p0 = 0 +/- 0.0370074,p1 = -2.50547e-06 +/- 0.000320041)
+     p.d.f normalization integral is zero or negative: -507.592 @ x=x_bkg=1503.75, coefList=(p0 = 0 +/- 0.0370074,p1 = -2.50547e-06 +/- 0.000320041)
+     getLogVal() top-level p.d.f evaluates to zero @ x=x_bkg=1503.75, coefList=(p0 = 0 +/- 0.0370074,p1 = -2.50547e-06 +/- 0.000320041)
+     p.d.f value is less than zero (-4.669299), forcing value to zero @ x=x_bkg=1504.25, coefList=(p0 = 0 +/- 0.0370074,p1 = -2.50547e-06 +/- 0.000320041)
+     p.d.f normalization integral is zero or negative: -507.592 @ x=x_bkg=1504.25, coefList=(p0 = 0 +/- 0.0370074,p1 = -2.50547e-06 +/- 0.000320041)
+     getLogVal() top-level p.d.f evaluates to zero @ x=x_bkg=1504.25, coefList=(p0 = 0 +/- 0.0370074,p1 = -2.50547e-06 +/- 0.000320041)
+     p.d.f value is less than zero (-4.673068), forcing value to zero @ x=x_bkg=1504.75, coefList=(p0 = 0 +/- 0.0370074,p1 = -2.50547e-06 +/- 0.000320041)
+     p.d.f normalization integral is zero or negative: -507.592 @ x=x_bkg=1504.75, coefList=(p0 = 0 +/- 0.0370074,p1 = -2.50547e-06 +/- 0.000320041)
+     getLogVal() top-level p.d.f evaluates to zero @ x=x_bkg=1504.75, coefList=(p0 = 0 +/- 0.0370074,p1 = -2.50547e-06 +/- 0.000320041)
+     p.d.f value is less than zero (-4.676839), forcing value to zero @ x=x_bkg=1505.25, coefList=(p0 = 0 +/- 0.0370074,p1 = -2.50547e-06 +/- 0.000320041)
+     p.d.f normalization integral is zero or negative: -507.592 @ x=x_bkg=1505.25, coefList=(p0 = 0 +/- 0.0370074,p1 = -2.50547e-06 +/- 0.000320041)
+     getLogVal() top-level p.d.f evaluates to zero @ x=x_bkg=1505.25, coefList=(p0 = 0 +/- 0.0370074,p1 = -2.50547e-06 +/- 0.000320041)
+    ... (remaining 569 messages suppressed)
+
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (6752.12) to force MIGRAD to back out of this region. Error log follows
+Parameter values: p0=0, p1=-1.82319e-06
+RooNLLVar::nll_bkg_data_bkg[ paramSet=(p0,p1) ]
+     function value is NAN @ paramSet=(p0 = 0 +/- 0.0370074,p1 = -1.82319e-06 +/- 0.000320041)
+RooPolynomial::bkg[ x=x_bkg coefList=(p0,p1) ]
+     p.d.f value is less than zero (-3.122717), forcing value to zero @ x=x_bkg=1503.75, coefList=(p0 = 0 +/- 0.0370074,p1 = -1.82319e-06 +/- 0.000320041)
+     p.d.f normalization integral is zero or negative: -341.999 @ x=x_bkg=1503.75, coefList=(p0 = 0 +/- 0.0370074,p1 = -1.82319e-06 +/- 0.000320041)
+     getLogVal() top-level p.d.f evaluates to zero @ x=x_bkg=1503.75, coefList=(p0 = 0 +/- 0.0370074,p1 = -1.82319e-06 +/- 0.000320041)
+     p.d.f value is less than zero (-3.125459), forcing value to zero @ x=x_bkg=1504.25, coefList=(p0 = 0 +/- 0.0370074,p1 = -1.82319e-06 +/- 0.000320041)
+     p.d.f normalization integral is zero or negative: -341.999 @ x=x_bkg=1504.25, coefList=(p0 = 0 +/- 0.0370074,p1 = -1.82319e-06 +/- 0.000320041)
+     getLogVal() top-level p.d.f evaluates to zero @ x=x_bkg=1504.25, coefList=(p0 = 0 +/- 0.0370074,p1 = -1.82319e-06 +/- 0.000320041)
+     p.d.f value is less than zero (-3.128202), forcing value to zero @ x=x_bkg=1504.75, coefList=(p0 = 0 +/- 0.0370074,p1 = -1.82319e-06 +/- 0.000320041)
+     p.d.f normalization integral is zero or negative: -341.999 @ x=x_bkg=1504.75, coefList=(p0 = 0 +/- 0.0370074,p1 = -1.82319e-06 +/- 0.000320041)
+     getLogVal() top-level p.d.f evaluates to zero @ x=x_bkg=1504.75, coefList=(p0 = 0 +/- 0.0370074,p1 = -1.82319e-06 +/- 0.000320041)
+     p.d.f value is less than zero (-3.130946), forcing value to zero @ x=x_bkg=1505.25, coefList=(p0 = 0 +/- 0.0370074,p1 = -1.82319e-06 +/- 0.000320041)
+     p.d.f normalization integral is zero or negative: -341.999 @ x=x_bkg=1505.25, coefList=(p0 = 0 +/- 0.0370074,p1 = -1.82319e-06 +/- 0.000320041)
+     getLogVal() top-level p.d.f evaluates to zero @ x=x_bkg=1505.25, coefList=(p0 = 0 +/- 0.0370074,p1 = -1.82319e-06 +/- 0.000320041)
+    ... (remaining 569 messages suppressed)
+
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (6752.12) to force MIGRAD to back out of this region. Error log follows
+Parameter values: p0=0, p1=-1.34173e-06
+RooNLLVar::nll_bkg_data_bkg[ paramSet=(p0,p1) ]
+     function value is NAN @ paramSet=(p0 = 0 +/- 0.0370074,p1 = -1.34173e-06 +/- 0.000320041)
+RooPolynomial::bkg[ x=x_bkg coefList=(p0,p1) ]
+     p.d.f value is less than zero (-2.034002), forcing value to zero @ x=x_bkg=1503.75, coefList=(p0 = 0 +/- 0.0370074,p1 = -1.34173e-06 +/- 0.000320041)
+     p.d.f normalization integral is zero or negative: -225.145 @ x=x_bkg=1503.75, coefList=(p0 = 0 +/- 0.0370074,p1 = -1.34173e-06 +/- 0.000320041)
+     getLogVal() top-level p.d.f evaluates to zero @ x=x_bkg=1503.75, coefList=(p0 = 0 +/- 0.0370074,p1 = -1.34173e-06 +/- 0.000320041)
+     p.d.f value is less than zero (-2.036020), forcing value to zero @ x=x_bkg=1504.25, coefList=(p0 = 0 +/- 0.0370074,p1 = -1.34173e-06 +/- 0.000320041)
+     p.d.f normalization integral is zero or negative: -225.145 @ x=x_bkg=1504.25, coefList=(p0 = 0 +/- 0.0370074,p1 = -1.34173e-06 +/- 0.000320041)
+     getLogVal() top-level p.d.f evaluates to zero @ x=x_bkg=1504.25, coefList=(p0 = 0 +/- 0.0370074,p1 = -1.34173e-06 +/- 0.000320041)
+     p.d.f value is less than zero (-2.038039), forcing value to zero @ x=x_bkg=1504.75, coefList=(p0 = 0 +/- 0.0370074,p1 = -1.34173e-06 +/- 0.000320041)
+     p.d.f normalization integral is zero or negative: -225.145 @ x=x_bkg=1504.75, coefList=(p0 = 0 +/- 0.0370074,p1 = -1.34173e-06 +/- 0.000320041)
+     getLogVal() top-level p.d.f evaluates to zero @ x=x_bkg=1504.75, coefList=(p0 = 0 +/- 0.0370074,p1 = -1.34173e-06 +/- 0.000320041)
+     p.d.f value is less than zero (-2.040058), forcing value to zero @ x=x_bkg=1505.25, coefList=(p0 = 0 +/- 0.0370074,p1 = -1.34173e-06 +/- 0.000320041)
+     p.d.f normalization integral is zero or negative: -225.145 @ x=x_bkg=1505.25, coefList=(p0 = 0 +/- 0.0370074,p1 = -1.34173e-06 +/- 0.000320041)
+     getLogVal() top-level p.d.f evaluates to zero @ x=x_bkg=1505.25, coefList=(p0 = 0 +/- 0.0370074,p1 = -1.34173e-06 +/- 0.000320041)
+    ... (remaining 569 messages suppressed)
+
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (6752.12) to force MIGRAD to back out of this region. Error log follows
+Parameter values: p0=0, p1=-1.00066e-06
+RooNLLVar::nll_bkg_data_bkg[ paramSet=(p0,p1) ]
+     function value is NAN @ paramSet=(p0 = 0 +/- 0.0370074,p1 = -1.00066e-06 +/- 0.000320041)
+RooPolynomial::bkg[ x=x_bkg coefList=(p0,p1) ]
+     p.d.f value is less than zero (-1.262748), forcing value to zero @ x=x_bkg=1503.75, coefList=(p0 = 0 +/- 0.0370074,p1 = -1.00066e-06 +/- 0.000320041)
+     p.d.f normalization integral is zero or negative: -142.365 @ x=x_bkg=1503.75, coefList=(p0 = 0 +/- 0.0370074,p1 = -1.00066e-06 +/- 0.000320041)
+     getLogVal() top-level p.d.f evaluates to zero @ x=x_bkg=1503.75, coefList=(p0 = 0 +/- 0.0370074,p1 = -1.00066e-06 +/- 0.000320041)
+     p.d.f value is less than zero (-1.264253), forcing value to zero @ x=x_bkg=1504.25, coefList=(p0 = 0 +/- 0.0370074,p1 = -1.00066e-06 +/- 0.000320041)
+     p.d.f normalization integral is zero or negative: -142.365 @ x=x_bkg=1504.25, coefList=(p0 = 0 +/- 0.0370074,p1 = -1.00066e-06 +/- 0.000320041)
+     getLogVal() top-level p.d.f evaluates to zero @ x=x_bkg=1504.25, coefList=(p0 = 0 +/- 0.0370074,p1 = -1.00066e-06 +/- 0.000320041)
+     p.d.f value is less than zero (-1.265758), forcing value to zero @ x=x_bkg=1504.75, coefList=(p0 = 0 +/- 0.0370074,p1 = -1.00066e-06 +/- 0.000320041)
+     p.d.f normalization integral is zero or negative: -142.365 @ x=x_bkg=1504.75, coefList=(p0 = 0 +/- 0.0370074,p1 = -1.00066e-06 +/- 0.000320041)
+     getLogVal() top-level p.d.f evaluates to zero @ x=x_bkg=1504.75, coefList=(p0 = 0 +/- 0.0370074,p1 = -1.00066e-06 +/- 0.000320041)
+     p.d.f value is less than zero (-1.267264), forcing value to zero @ x=x_bkg=1505.25, coefList=(p0 = 0 +/- 0.0370074,p1 = -1.00066e-06 +/- 0.000320041)
+     p.d.f normalization integral is zero or negative: -142.365 @ x=x_bkg=1505.25, coefList=(p0 = 0 +/- 0.0370074,p1 = -1.00066e-06 +/- 0.000320041)
+     getLogVal() top-level p.d.f evaluates to zero @ x=x_bkg=1505.25, coefList=(p0 = 0 +/- 0.0370074,p1 = -1.00066e-06 +/- 0.000320041)
+    ... (remaining 569 messages suppressed)
+
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (6752.12) to force MIGRAD to back out of this region. Error log follows
+Parameter values: p0=0, p1=-7.57625e-07
+RooNLLVar::nll_bkg_data_bkg[ paramSet=(p0,p1) ]
+     function value is NAN @ paramSet=(p0 = 0 +/- 0.0370074,p1 = -7.57625e-07 +/- 0.000320041)
+RooPolynomial::bkg[ x=x_bkg coefList=(p0,p1) ]
+     p.d.f value is less than zero (-0.713191), forcing value to zero @ x=x_bkg=1503.75, coefList=(p0 = 0 +/- 0.0370074,p1 = -7.57625e-07 +/- 0.000320041)
+     p.d.f normalization integral is zero or negative: -83.3799 @ x=x_bkg=1503.75, coefList=(p0 = 0 +/- 0.0370074,p1 = -7.57625e-07 +/- 0.000320041)
+     getLogVal() top-level p.d.f evaluates to zero @ x=x_bkg=1503.75, coefList=(p0 = 0 +/- 0.0370074,p1 = -7.57625e-07 +/- 0.000320041)
+     p.d.f value is less than zero (-0.714330), forcing value to zero @ x=x_bkg=1504.25, coefList=(p0 = 0 +/- 0.0370074,p1 = -7.57625e-07 +/- 0.000320041)
+     p.d.f normalization integral is zero or negative: -83.3799 @ x=x_bkg=1504.25, coefList=(p0 = 0 +/- 0.0370074,p1 = -7.57625e-07 +/- 0.000320041)
+     getLogVal() top-level p.d.f evaluates to zero @ x=x_bkg=1504.25, coefList=(p0 = 0 +/- 0.0370074,p1 = -7.57625e-07 +/- 0.000320041)
+     p.d.f value is less than zero (-0.715470), forcing value to zero @ x=x_bkg=1504.75, coefList=(p0 = 0 +/- 0.0370074,p1 = -7.57625e-07 +/- 0.000320041)
+     p.d.f normalization integral is zero or negative: -83.3799 @ x=x_bkg=1504.75, coefList=(p0 = 0 +/- 0.0370074,p1 = -7.57625e-07 +/- 0.000320041)
+     getLogVal() top-level p.d.f evaluates to zero @ x=x_bkg=1504.75, coefList=(p0 = 0 +/- 0.0370074,p1 = -7.57625e-07 +/- 0.000320041)
+     p.d.f value is less than zero (-0.716611), forcing value to zero @ x=x_bkg=1505.25, coefList=(p0 = 0 +/- 0.0370074,p1 = -7.57625e-07 +/- 0.000320041)
+     p.d.f normalization integral is zero or negative: -83.3799 @ x=x_bkg=1505.25, coefList=(p0 = 0 +/- 0.0370074,p1 = -7.57625e-07 +/- 0.000320041)
+     getLogVal() top-level p.d.f evaluates to zero @ x=x_bkg=1505.25, coefList=(p0 = 0 +/- 0.0370074,p1 = -7.57625e-07 +/- 0.000320041)
+    ... (remaining 569 messages suppressed)
+
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=6749.27 FROM HESSE     STATUS=OK             22 CALLS          71 TOTAL
+                     EDM=5.4124    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                INTERNAL      INTERNAL  
+  NO.   NAME      VALUE            ERROR       STEP SIZE       VALUE   
+   1  p0           0.00000e+00   6.87694e-04   1.44858e-06   0.00000e+00
+   2  p1           0.00000e+00   3.27946e-07   7.57625e-08   0.00000e+00
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  2    ERR DEF=0.5
+  4.729e-07  4.566e-11 
+  4.566e-11  1.075e-13 
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2
+        1  0.20246   1.000  0.202
+        2  0.20246   0.202  1.000
+[#1] INFO:Minization -- RooMinimizer::optimizeConst: deactivating const optimization
+Reduced Chi2: 5.7173
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(data): fit range of variable x expanded to nearest bin boundaries: [1548.8,1558.8] --> [1548.5,1559]
+[#1] INFO:Minization -- p.d.f. provides expected number of events, including extended term in likelihood.
+[#1] INFO:Minization -- RooMinimizer::optimizeConst: activating const optimization
+[#1] INFO:Minization --  The following expressions have been identified as constant and will be precalculated and cached: (bkg_fixed)
+[#1] INFO:Minization --  The following expressions will be evaluated in cache-and-track mode: (gauss)
+ **********
+ **    1 **SET PRINT           1
+ **********
+ **********
+ **    2 **SET NOGRAD
+ **********
+ PARAMETER DEFINITIONS:
+    NO.   NAME         VALUE      STEP SIZE      LIMITS
+     1 bkg_area     7.92000e+01  3.96000e+01    0.00000e+00  2.52426e+05
+     2 gauss_area   7.92000e+02  3.96000e+02    0.00000e+00  2.52426e+05
+     3 mean         1.55380e+03  1.00000e+00    1.54880e+03  1.55880e+03
+     4 sigma        1.06110e+00  2.01609e-01    1.06110e-01  2.12220e+00
+ **********
+ **    3 **SET ERR         0.5
+ **********
+ **********
+ **    4 **SET PRINT           1
+ **********
+ **********
+ **    5 **SET STR           1
+ **********
+ NOW USING STRATEGY  1: TRY TO BALANCE SPEED AGAINST RELIABILITY
+ **********
+ **    6 **MIGRAD        2000           1
+ **********
+ FIRST CALL TO USER FUNCTION AT NEW START POINT, WITH IFLAG=4.
+ START MIGRAD MINIMIZATION.  STRATEGY  1.  CONVERGENCE WHEN EDM .LT. 1.00e-03
+ FCN=-3364.83 FROM MIGRAD    STATUS=INITIATE       16 CALLS          17 TOTAL
+                     EDM= unknown      STRATEGY= 1      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  bkg_area     7.92000e+01   3.96000e+01   9.17037e-03   7.27822e+02
+   2  gauss_area   7.92000e+02   3.96000e+02   2.90385e-02   7.36264e+02
+   3  mean         1.55380e+03   1.00000e+00   2.01358e-01   3.02179e+02
+   4  sigma        1.06110e+00   2.01609e-01   2.01653e-01   1.07349e+02
+                               ERR DEF= 0.5
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=-3377.16 FROM MIGRAD    STATUS=CONVERGED      81 CALLS          82 TOTAL
+                     EDM=3.7289e-07    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  bkg_area     7.32478e+01   1.32126e+01   1.10712e-04   1.40631e-01
+   2  gauss_area   7.43748e+02   2.90701e+01   8.19666e-05  -1.27602e-01
+   3  mean         1.55370e+03   3.70956e-02   2.97612e-04   2.94127e-03
+   4  sigma        9.36037e-01   3.25803e-02   1.20658e-03   1.62236e-02
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  4    ERR DEF=0.5
+  1.746e+02 -1.013e+02  1.449e-02 -1.699e-01 
+ -1.013e+02  8.451e+02 -1.449e-02  1.700e-01 
+  1.449e-02 -1.449e-02  1.376e-03 -3.975e-05 
+ -1.699e-01  1.700e-01 -3.975e-05  1.062e-03 
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4
+        1  0.44089   1.000 -0.264  0.030 -0.395
+        2  0.27625  -0.264  1.000 -0.013  0.179
+        3  0.03771   0.030 -0.013  1.000 -0.033
+        4  0.40274  -0.395  0.179 -0.033  1.000
+ **********
+ **    7 **SET ERR         0.5
+ **********
+ **********
+ **    8 **SET PRINT           1
+ **********
+ **********
+ **    9 **HESSE        2000
+ **********
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=-3377.16 FROM HESSE     STATUS=OK             23 CALLS         105 TOTAL
+                     EDM=3.72776e-07    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                INTERNAL      INTERNAL  
+  NO.   NAME      VALUE            ERROR       STEP SIZE       VALUE   
+   1  bkg_area     7.32478e+01   1.32197e+01   2.21424e-05  -1.53673e+00
+   2  gauss_area   7.43748e+02   2.90732e+01   1.63933e-05  -1.46218e+00
+   3  mean         1.55370e+03   3.70965e-02   5.95224e-05  -1.97281e-02
+   4  sigma        9.36037e-01   3.25985e-02   4.82632e-05  -1.77627e-01
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  4    ERR DEF=0.5
+  1.748e+02 -1.015e+02  1.458e-02 -1.705e-01 
+ -1.015e+02  8.453e+02 -1.458e-02  1.706e-01 
+  1.458e-02 -1.458e-02  1.376e-03 -4.087e-05 
+ -1.705e-01  1.706e-01 -4.087e-05  1.063e-03 
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4
+        1  0.44186   1.000 -0.264  0.030 -0.396
+        2  0.27661  -0.264  1.000 -0.014  0.180
+        3  0.03839   0.030 -0.014  1.000 -0.034
+        4  0.40390  -0.396  0.180 -0.034  1.000
+[#1] INFO:Minization -- RooMinimizer::optimizeConst: deactivating const optimization
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model) directly selected PDF components: (bkg_fixed)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model) indirectly selected PDF components: ()
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model) directly selected PDF components: (gauss)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(model) indirectly selected PDF components: ()
+Reduced Chi2: 2.42274

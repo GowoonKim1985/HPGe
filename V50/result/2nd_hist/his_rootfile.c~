@@ -1,0 +1,80 @@
+#include "TFile.h"
+#include "TH1.h"
+#include <iostream>
+#include <vector>
+#include <string>
+
+void his_rootfile() {
+    // 1️⃣ 원본 파일 열기
+    TFile *fin = TFile::Open("his_000650.v1.root", "READ");
+    if (!fin || fin->IsZombie()) {
+        std::cerr << "입력 ROOT 파일을 열 수 없습니다." << std::endl;
+        return;
+    }
+
+    // 2️⃣ 복사할 히스토그램 이름 목록
+    std::vector<std::string> hist_names = {
+        "his1", "his3", "his5", "his6", "his7", "his8",
+        "his9", "his11", "his12", "his13", "his14", "his_tot3"
+    };
+
+    // 3️⃣ 새로운 파일 생성 (기존 파일 덮어쓰기 모드)
+    TFile *fout = new TFile("his_th1.root", "RECREATE");
+
+    // 4️⃣ 선택한 히스토그램만 복사
+    for (auto &name : hist_names) {
+        TH1 *h = (TH1*)fin->Get(name.c_str());
+        if (!h) {
+            std::cerr << name << " 히스토그램을 찾을 수 없습니다." << std::endl;
+            continue;
+        }
+        h->Write(); // 새 파일에 복사
+        std::cout << name << " 저장 완료" << std::endl;
+    }
+#include "TFile.h"
+#include "TH1.h"
+#include <iostream>
+#include <vector>
+#include <string>
+
+void copy_selected_hist() {
+    // 1️⃣ 원본 파일 열기
+    TFile *fin = TFile::Open("his_000650.v1.root", "READ");
+    if (!fin || fin->IsZombie()) {
+        std::cerr << "입력 ROOT 파일을 열 수 없습니다." << std::endl;
+        return;
+    }
+
+    // 2️⃣ 복사할 히스토그램 이름 목록
+    std::vector<std::string> hist_names = {
+        "his1", "his3", "his5", "his6", "his7", "his8",
+        "his9", "his11", "his12", "his13", "his14"
+    };
+
+    // 3️⃣ 새로운 파일 생성 (기존 파일 덮어쓰기 모드)
+    TFile *fout = new TFile("selected_hists.root", "RECREATE");
+
+    // 4️⃣ 선택한 히스토그램만 복사
+    for (auto &name : hist_names) {
+        TH1 *h = (TH1*)fin->Get(name.c_str());
+        if (!h) {
+            std::cerr << name << " 히스토그램을 찾을 수 없습니다." << std::endl;
+            continue;
+        }
+        h->Write(); // 새 파일에 복사
+        std::cout << name << " 저장 완료" << std::endl;
+    }
+
+    // 5️⃣ 마무리
+    fout->Close();
+    fin->Close();
+
+    std::cout << "✅ 선택된 히스토그램이 selected_hists.root에 저장되었습니다." << std::endl;
+}
+
+    // 5️⃣ 마무리
+    fout->Close();
+    fin->Close();
+
+    std::cout << "✅ 선택된 히스토그램이 selected_hists.root에 저장되었습니다." << std::endl;
+}
